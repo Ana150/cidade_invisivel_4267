@@ -8,11 +8,15 @@ body{
     width: 100vw;
     height: 100vh;
     background-image: url("Imagens/MicrosoftTeams-image.png");
+    background-color: #00000055;
+    background-blend-mode: darken;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: right top;
     display: flex;
     flex-direction: column;
     font-family: 'Karla', sans-serif;
+    color: white;
 }
 
 header{
@@ -48,12 +52,63 @@ header{
 }
 
 main{
-    /* background-color: rgb(255, 99, 71);*/ 
     flex-grow: 1;
+    padding: 25vh 10vw;
+}
+
+main h1{
+    font-size: 70px;
+}
+
+main h2{
+    font-size: 30px;
+}
+
+main p{
+    font-size: 25px;
+    font-weight: 200;
+    max-width: 800px;
+}
+
+main a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: goldenrod;
+    margin-top: 20px;
+    border-radius: 2px;
+}
+
+main a:hover{
+    border:solid goldenrod;
+    background-color: black;
 }
 
 footer{
-    /* background-color: turquoise; */
-    height: 30px;
+    text-align: center;
+    height: 90px;
+}
+
+.butterfly{
+    position: absolute;
+    width: 90px;
+    top: 90vh;
+    left: 80vw;
+    filter: brightness(10%);
+    animation: voar 20 linear infinite;
+}
+
+@keyframes voar {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-90vw, -90vw);
+    }
 }
 
