@@ -100,7 +100,7 @@ footer{
     top: 90vh;
     left: 80vw;
     filter: brightness(10%);
-    animation: voar 20 linear infinite;
+    animation: voar 30s linear infinite;
 }
 
 @keyframes voar {
