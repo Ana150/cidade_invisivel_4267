@@ -8,7 +8,7 @@
      width: 100vw;
      height: 100vh;
      background-size: cover;
-     background-image: url("IMG - Iara/iara.jpg");
+     background-image: url("IMG - Tutu/tutu.jfif");
      background-color: #00000055;
      background-blend-mode: darken;
      background-repeat: no-repeat;
@@ -35,6 +35,7 @@
 .links ul{
    display: flex;
    gap: 20px;
+   color: white;
    list-style-type: none;
 }
 
@@ -48,31 +49,6 @@
 
 .links a:hover{
    color: red;
-}
-
-.links ul .submenu {
-    margin-top: 1px;
-    display: none;
-    position: absolute;
-    font-size: 12px;
-}
-
-.submenu {
-    background-color: #000000BB;
- }
-
-.submenu a{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.submenu a:hover {
-    border-left: 10px solid red;
-}
-
-.links li:hover > .submenu{
-    display: flex;
-    flex-direction: column;
 }
 
 main{
@@ -89,7 +65,7 @@ main h1{
 }
 
 main h1::after{
-    content: "Iara";
+    content: "Tutu Marambá";
     position: absolute;
     top: 4px;
     left: 4px;
@@ -157,4 +133,3 @@ main h2{
 footer{
     text-align: center;
 }
-
