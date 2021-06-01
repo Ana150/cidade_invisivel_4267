@@ -57,7 +57,8 @@ main{
 }
 
 main h1{
-    font-size: 70px;
+    position: relative;
+    font-size: 100px;
 }
 
 main h2{

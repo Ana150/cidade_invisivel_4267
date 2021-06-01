@@ -58,9 +58,21 @@ main{
 }
 
 main h1{
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
-    font-size: 100px; color: #fffdd900
+    position: relative;
+    font-size: 100px;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+main h1::after{
+    content: "Curupira";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    font-size: 100px;
+    -webkit-text-stroke: 3px black;
+    color: transparent;
+    z-index: -1;
 }
 
 main .lenda{
