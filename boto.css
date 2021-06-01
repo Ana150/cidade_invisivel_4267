@@ -7,8 +7,8 @@
  body{
      width: 100vw;
      height: 100vh;
+     background-image: url("Imagens/boto.jpg");
      background-size: cover;
-     background-image: url("IMG - Tutu/tutu.jfif");
      background-color: #00000055;
      background-blend-mode: darken;
      background-repeat: no-repeat;
@@ -18,37 +18,62 @@
      font-family: 'Karla', sans-serif;
      color: white;
  }
-
+ 
  header{
-    background-color: #000000AA;
-    height: 70px;
+     top: 0;
+     background-color: #000000AA;
+     height: 70px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 10vw;
+ }
+ 
+ .logo img{
+     width: 120px;
+ }
+
+ .links ul{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10vw;
-}
-
-.logo img{
-    width: 120px;
-}
-
-.links ul{
-   display: flex;
-   gap: 20px;
-   color: white;
-   list-style-type: none;
+    gap: 20px;
+    list-style-type: none;
 }
 
 .links a{
-   color: white;
-   text-decoration: none;
-   font-size: 20px;
-   user-select: none;
-   transition: all 1s;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    user-select: none;
+    transition: all 1s;
 }
 
 .links a:hover{
-   color: red;
+    color: red;
+}
+
+.links ul .submenu {
+    margin-top: 1px;
+    display: none;
+    position: absolute;
+    font-size: 12px;
+}
+
+.submenu {
+    background-color: #000000BB;
+ }
+
+.submenu a{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.submenu a:hover {
+    border-left: 10px solid red;
+}
+
+.links li:hover > .submenu{
+    display: flex;
+    flex-direction: column;
 }
 
 main{
@@ -65,7 +90,7 @@ main h1{
 }
 
 main h1::after{
-    content: "Tutu Marambá";
+    content: "Boto";
     position: absolute;
     top: 4px;
     left: 4px;
